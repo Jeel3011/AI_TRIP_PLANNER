@@ -1,11 +1,21 @@
 class Calculator:
     @staticmethod
-    def multiply(a: int, b: int) -> int:
+    def multiply(a: float, b: float) -> float:
         """
-        Multiply two integers.
+        Multiply two floats.
 
         Args:
-            a (int): The first integer.
+            a (float): The first float.
+            b (float): The second float.
+
+        Returns:
+            float: The product of a and b.
+        """
+        return a * b
+
+    @staticmethod
+    def calculate_total(*x: float) -> float:
+        """
             b (int): The second integer.
 
         Returns:
